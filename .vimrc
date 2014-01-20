@@ -11,7 +11,7 @@
 " }
 
 " General Settings {
-    set nu
+    set nonu
     set nobackup
     set nowrap                                                  " Don't auto change line
     set showcmd                                                 " Show current cmd in status bar
@@ -29,18 +29,18 @@
 " }
 
 " Search related settings {
-    set showmatch                               	            " Show matching brackets/parenthesis
-    set incsearch	                                            " Find as you type search
-    set hlsearch	                                            " Hightlight search terms
-    set ignorecase 	                                            " Case insensitive search
-    set smartcase 	                                            " Case sensitive when uc present
+    set showmatch                                               " Show matching brackets/parenthesis
+    set incsearch                                               " Find as you type search
+    set hlsearch                                                " Hightlight search terms
+    set ignorecase                                              " Case insensitive search
+    set smartcase                                               " Case sensitive when uc present
 " }
 
 " Indent related settings {
-    set autoindent 	                                            " Indent at the same level of the previous line
-    set shiftwidth=4			                                " Use indent of 4 spaces
-    set expandtab				                                " Tabs are spaces, not tabs
-    set tabstop=4				                                " An indentation delete indent
+    set autoindent                                              " Indent at the same level of the previous line
+    set shiftwidth=4                                            " Use indent of 4 spaces
+    set tabstop=4                                               " An indentation delete indent
+    set expandtab                                               " Tabs are spaces, not tabs
     filetype indent plugin on                                   " Autoindent based on filetype
 " }
 
@@ -49,11 +49,12 @@
     syntax on                                                   " Highlighting 
     colorscheme desert 
     set background=dark
-    " DoMatchParen                                              " Highlight matched parentheses 
 " }
 
 " Custom key map {
     nnoremap <F2> :set nonumber!<CR>
+    nnoremap <F3> :NERDTreeToggle<CR>
+    nnoremap <F4> :TlistToggle<CR>
 " }
 
 " Mac OS copy and paste {
@@ -62,7 +63,7 @@
 " }
 
 " Vundle Settings {
-	
+    
     set nocompatible               " be iMproved
     filetype off                   " required!
 
@@ -76,16 +77,16 @@
     " 4 ways to install plugins:
     
     " 1. original repos on github
-    Bundle 'tpope/vim-fugitive'
-    Bundle 'Lokaltog/vim-easymotion'
-    Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+    " Bundle 'tpope/vim-fugitive'
+    " Bundle 'Lokaltog/vim-easymotion'
+    " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
     " 2. vim-scripts repos
-    Bundle 'L9'
-    Bundle 'FuzzyFinder'    
+    " Bundle 'L9'
+    " Bundle 'FuzzyFinder'    
     
     " 3. non github repos
-    Bundle 'git://git.wincent.com/command-t.git'
+    " Bundle 'git://git.wincent.com/command-t.git'
     
     " 4. git repos on your local machine (ie. when working on your own plugin)
     "Bundle 'file:///Users/gmarik/path/to/plugin'
@@ -106,7 +107,21 @@
     " The-NERD-tree {
         Bundle 'vim-scripts/The-NERD-tree'   
     " }
-        "Bundle 'altercation/vim-colors-solarized'
-        Bundle 'Yggdroot/indentLine'                      
-
+    " taglist {
+        Bundle 'vim-scripts/taglist.vim'
+    " }
+    "Bundle 'altercation/vim-colors-solarized'
+    Bundle 'Yggdroot/indentLine'                      
+    
+    " vim-markdown {
+        Bundle 'plasticboy/vim-markdown'
+        " Key Map
+        " ]]: go to next header
+        " ]]: go to next header.
+        " [[: go to previous header. Contrast with ]c.
+        " ][: go to next sibling header if any.
+        " []: go to previous sibling header if any.
+        " ]c: go to Current header.
+        " ]u: go to parent header (Up)
+    " }
 " } Vundle Settings End!
