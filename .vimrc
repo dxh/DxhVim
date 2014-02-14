@@ -1,13 +1,11 @@
-" Vim配置文件中，参数与参数值之间不能用空格
 " Easy Setting {
     let mapleader = ","
-
-    "Fast reloading of the .vimrc
-    map <silent> <leader>ss :source ~/.vimrc<cr>
-    "Fast editing of .vimrc
-    map <silent> <leader>ee :e ~/.vimrc<cr>
-    "When .vimrc is edited, reload it
-    autocmd! bufwritepost .vimrc source ~/.vimrc 
+    " Fast reloading of the .vimrc    
+    map <silent> <leader>sv :source ~/.vimrc<cr>                
+    " Fast editing of .vimrc
+    map <silent> <leader>ev :e ~/.vim/.vimrc<cr>                
+    " When .vimrc is edited, reload it 
+    autocmd! bufwritepost .vimrc source ~/.vimrc                
 " }
 
 " General Settings {
@@ -17,12 +15,14 @@
     set showcmd                                                 " Show current cmd in status bar
     set ruler                                                   " Show number of rows and columns in status bar
     set mouse=a
+    set clipboard=unnamed
+    set backspace=indent,eol,start
 " }
 
 " Chinese related settings {
     let $LANG="zh_CN.UTF-8"
     set fileencoding=utf-8                                      " Save file as utf8
-    set fileencodings=utf-8,chinese,latin-1                     " Try open file with these encodings
+    set fileencodings=ucs-bom,utf-8,chinese,default,latin-1                     " Try open file with these encodings
     set termencoding=utf-8
     set encoding=utf-8
     set formatoptions+=m                                        " 如遇Unicode值大于255的文本，不必等到空格再折行
@@ -59,10 +59,6 @@
     nnoremap <F4> :TlistToggle<CR>
 " }
 
-" Mac OS copy and paste {
-    vmap y :w !pbcopy<CR><CR>
-    nmap p :r !pbpaste<CR><CR>
-" }
 
 " Vundle Settings {
     
@@ -94,7 +90,7 @@
     "Bundle 'file:///Users/gmarik/path/to/plugin'
 
     filetype plugin indent on     " required!
-    "
+    
     " Brief help
     " :BundleList          - list configured bundles
     " :BundleInstall(!)    - install(update) bundles
@@ -112,6 +108,20 @@
     " taglist {
         Bundle 'vim-scripts/taglist.vim'
     " }
+    " ctrlp { 快速打开文件
+        Bundle 'kien/ctrlp.vim'
+    " }
+    " neocomplcache { 代码补全
+        " Bundle 'Valloric/YouCompleteMe'
+    " }
+    " vim-multiple-cursors { 多光标操作，可同时编辑多个地方
+        Bundle 'terryma/vim-multiple-cursors'
+    " }
+    " vim-commentary { 注释
+        Bundle 'tpope/vim-commentary'
+    " }
+    Bundle 'shawncplus/phpcomplete.vim'
+    Bundle 'bling/vim-airline'
     "Bundle 'altercation/vim-colors-solarized'
     Bundle 'Yggdroot/indentLine'                      
     
