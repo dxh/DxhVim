@@ -1,7 +1,8 @@
 # About 
 Configuration of Vim Supported by dxh
+[Sina Weibo](http://weibo.com/survivordeng/profile?rightmod=1&wvr=5&mod=personinfo)
 
-# Quick Start
+# Installation 
 
 1. Clone this Configuration
 > $ git clone https://github.com/dxh/DxhVim.git ~/.vim
@@ -11,4 +12,11 @@ Configuration of Vim Supported by dxh
 
 3. Add the following string to ~/.vimrc
 > source ~/.vim/.vimrc 
+
+# Features
+1. 使用Vundle管理插件
+2. 使用系统剪贴板
+3. 集成常用插件
+4. 一些方便的快捷键
+
 
