@@ -5,13 +5,21 @@ Configuration of Vim Supported by dxh
 # Installation 
 
 1. Clone this Configuration
-> $ git clone https://github.com/dxh/DxhVim.git ~/.vim
+
+    $ git clone https://github.com/dxh/DxhVim.git ~/.vim
 
 2. Setup Vundle
-> $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-3. Add the following string to ~/.vimrc
-> source ~/.vim/.vimrc 
+    $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+3. Source the ~/.vim/.vimrc in ~/.vimrc 
+    
+    echo 'source ~/.vim/.vimrc' > ~/.vimrc 
+
+# Update to the latest version
+
+    cd ~/.vim/
+    git pull    
 
 # Features
 1. 使用Vundle管理插件
