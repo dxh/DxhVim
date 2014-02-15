@@ -4,18 +4,10 @@ Configuration of Vim Supported by dxh
 [Sina Weibo](http://weibo.com/survivordeng/profile?rightmod=1&wvr=5&mod=personinfo)
 
 # Installation (Mac OS X and Linux)
-
-1. Clone this Configuration
-
-    git clone https://github.com/dxh/DxhVim.git ~/.vim
-
-2. Setup Vundle
-
-    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
-3. Source the ~/.vim/.vimrc in ~/.vimrc
-
-    echo 'source ~/.vim/.vimrc' > ~/.vimrc
+    
+    git clone https://github.com/dxh/DxhVim.git ~/.vim                      # Clone this Configuration
+    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle     # Setup Vundle
+    echo 'source ~/.vim/.vimrc' > ~/.vimrc                                  # Source the ~/.vim/.vimrc in ~/.vimrc
 
 # Update to the latest version
     
