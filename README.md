@@ -2,7 +2,7 @@
 Configuration of Vim Supported by dxh
 [Sina Weibo](http://weibo.com/survivordeng/profile?rightmod=1&wvr=5&mod=personinfo)
 
-# Installation 
+# Installation (Mac OS X and Linux)
 
 1. Clone this Configuration
 
@@ -12,9 +12,9 @@ Configuration of Vim Supported by dxh
 
     $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-3. Source the ~/.vim/.vimrc in ~/.vimrc 
-    
-    echo 'source ~/.vim/.vimrc' > ~/.vimrc 
+3. Source the ~/.vim/.vimrc in ~/.vimrc
+
+    echo 'source ~/.vim/.vimrc' > ~/.vimrc
 
 # Update to the latest version
 
