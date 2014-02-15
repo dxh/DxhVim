@@ -16,6 +16,10 @@
     set ruler                                                   " Show number of rows and columns in status bar
     set mouse=a
     set clipboard=unnamed
+    if has('mac') || has("macunix")
+        vmap y :w !pbcopy<CR><CR>
+        nmap p :r !pbpaste<CR><CR> 
+    endif
     set backspace=indent,eol,start
 " }
 
