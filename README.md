@@ -1,7 +1,7 @@
 # About 
 Configuration of Vim Supported by dxh
 
-[Sina Weibo](http://weibo.com/survivordeng/profile?rightmod=1&wvr=5&mod=personinfo)
+[Sina Weibo](http://weibo.com/survivordeng)
 
 # Installation (Mac OS X and Linux)
     
