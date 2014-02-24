@@ -108,6 +108,12 @@
 
     " The-NERD-tree {
         Bundle 'vim-scripts/The-NERD-tree'   
+        " Key Map
+        " o Open 
+        " go Open and stay
+        " x Unfold
+        " X Unfold All
+        " :h NerdTreeMapping See more key mapping
     " }
     " taglist {
         Bundle 'vim-scripts/taglist.vim'
@@ -122,9 +128,14 @@
         Bundle 'terryma/vim-multiple-cursors'
     " }
     " vim-commentary { 注释
-        Bundle 'tpope/vim-commentary'
+        " Bundle 'tpope/vim-commentary'
     " }
-    Bundle 'shawncplus/phpcomplete.vim'
+    " nerdcommenter {
+        Bundle 'scrooloose/nerdcommenter'
+        " Key Map
+        " <leader>ci comment and uncomment
+    " }
+    " Bundle 'shawncplus/phpcomplete.vim'
     Bundle 'bling/vim-airline'
     "Bundle 'altercation/vim-colors-solarized'
     Bundle 'Yggdroot/indentLine'                      
