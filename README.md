@@ -7,6 +7,9 @@ Configuration of Vim Supported by dxh
     
     git clone https://github.com/dxh/DxhVim.git ~/.vim                      # Clone this Configuration
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle     # Setup Vundle
+    :BundleInstall
+    cd ~/.vim/bundle/YouCompleteMe/
+    ./install.sh --clang-completer
     echo 'source ~/.vim/.vimrc' > ~/.vimrc                                  # Source the ~/.vim/.vimrc in ~/.vimrc
 
 # Update to the latest version
@@ -16,8 +19,8 @@ Configuration of Vim Supported by dxh
 
 # Features
 1. 使用Vundle管理插件
-2. 使用系统剪贴板
-3. 集成常用插件
+2. 集成常用插件
+3. 使用系统剪贴板
 4. 一些方便的快捷键
 
 # Key Mapping

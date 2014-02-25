@@ -26,7 +26,7 @@
 " Chinese related settings {
     let $LANG="zh_CN.UTF-8"
     set fileencoding=utf-8                                      " Save file as utf8
-    set fileencodings=ucs-bom,utf-8,chinese,default,latin-1                     " Try open file with these encodings
+    set fileencodings=ucs-bom,utf-8,chinese,default,latin-1     " Try open file with these encodings
     set termencoding=utf-8
     set encoding=utf-8
     set formatoptions+=m                                        " 如遇Unicode值大于255的文本，不必等到空格再折行
@@ -76,23 +76,23 @@
     " required! 
     Bundle 'gmarik/vundle'
 
-    " 4 ways to install plugins:
+    " 4 ways to install plugins {
     
-    " 1. original repos on github
-    " Bundle 'tpope/vim-fugitive'
-    " Bundle 'Lokaltog/vim-easymotion'
-    " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+        " 1. original repos on github
+        " Bundle 'tpope/vim-fugitive'
+        " Bundle 'Lokaltog/vim-easymotion'
+        " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-    " 2. vim-scripts repos
-    " Bundle 'L9'
-    " Bundle 'FuzzyFinder'    
-    
-    " 3. non github repos
-    " Bundle 'git://git.wincent.com/command-t.git'
-    
-    " 4. git repos on your local machine (ie. when working on your own plugin)
-    "Bundle 'file:///Users/gmarik/path/to/plugin'
-
+        " 2. vim-scripts repos
+        " Bundle 'L9'
+        " Bundle 'FuzzyFinder'    
+        
+        " 3. non github repos
+        " Bundle 'git://git.wincent.com/command-t.git'
+        
+        " 4. git repos on your local machine (ie. when working on your own plugin)
+        "Bundle 'file:///Users/gmarik/path/to/plugin'
+    " }
     filetype plugin indent on     " required!
     
     " Brief help
@@ -109,33 +109,38 @@
     " The-NERD-tree {
         Bundle 'vim-scripts/The-NERD-tree'   
         " Key Map
+        " F3 Toogle the-nerd-tree
         " o Open 
         " go Open and stay
         " x Unfold
         " X Unfold All
         " :h NerdTreeMapping See more key mapping
     " }
+   
     " taglist {
         Bundle 'vim-scripts/taglist.vim'
+        " Key Map
+        " F4 Toogle taglist
     " }
+   
     " ctrlp { 快速打开文件
         Bundle 'kien/ctrlp.vim'
     " }
+   
     " neocomplcache { 代码补全
-        " Bundle 'Valloric/YouCompleteMe'
+         Bundle 'Valloric/YouCompleteMe'
     " }
+   
     " vim-multiple-cursors { 多光标操作，可同时编辑多个地方
         Bundle 'terryma/vim-multiple-cursors'
     " }
-    " vim-commentary { 注释
-        " Bundle 'tpope/vim-commentary'
-    " }
+    
     " nerdcommenter {
         Bundle 'scrooloose/nerdcommenter'
         " Key Map
         " <leader>ci comment and uncomment
     " }
-    " Bundle 'shawncplus/phpcomplete.vim'
+
     Bundle 'bling/vim-airline'
     "Bundle 'altercation/vim-colors-solarized'
     Bundle 'Yggdroot/indentLine'                      
