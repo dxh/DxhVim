@@ -16,10 +16,10 @@
     set ruler                                                   " Show number of rows and columns in status bar
     set mouse=a
     set clipboard=unnamed
-    if has('mac') || has("macunix")
-        vmap y :w !pbcopy<CR><CR>
-        nmap p :r !pbpaste<CR><CR> 
-    endif
+    "if has('mac') || has("macunix")
+        "vmap y :w !pbcopy<CR><CR>
+        "nmap p :r !pbpaste<CR><CR> 
+    "endif
     set backspace=indent,eol,start
 " }
 
@@ -52,7 +52,7 @@
 
 " Color related settings {
     syntax on                                                   " Highlighting 
-    colorscheme desert 
+    colorscheme solarized
     set background=dark
 " }
 
@@ -128,9 +128,14 @@
     " }
    
     " neocomplcache { 代码补全
-         Bundle 'Valloric/YouCompleteMe'
+         "Bundle 'Valloric/YouCompleteMe'
+        "功能强大，但是每个平台需要单独编译,安装方法请参考该插件Github上的说明
     " }
-   
+    " emmet { 前端开发利器
+        Bundle "mattn/emmet-vim"
+        " Key Map
+        " <c-y>/ Toogle 注释
+    " }
     " vim-multiple-cursors { 多光标操作，可同时编辑多个地方
         Bundle 'terryma/vim-multiple-cursors'
     " }
@@ -142,7 +147,7 @@
     " }
 
     Bundle 'bling/vim-airline'
-    "Bundle 'altercation/vim-colors-solarized'
+    Bundle 'altercation/vim-colors-solarized'
     Bundle 'Yggdroot/indentLine'                      
     
     " vim-markdown {
