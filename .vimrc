@@ -52,7 +52,7 @@
 
 " Color related settings {
     syntax on                                                   " Highlighting 
-    colorscheme solarized
+    "colorscheme solarized
     set background=dark
 " }
 
@@ -147,7 +147,7 @@
     " }
 
     Bundle 'bling/vim-airline'
-    Bundle 'altercation/vim-colors-solarized'
+    "Bundle 'altercation/vim-colors-solarized'
     Bundle 'Yggdroot/indentLine'                      
     
     " vim-markdown {

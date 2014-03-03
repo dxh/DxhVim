@@ -4,21 +4,25 @@ Configuration of Vim Supported by [dxh](http://dxh.github.io)
 # Installation (Mac OS X and Linux)
 
 1. Clone this Configuration
+
 ```bash
 git clone https://github.com/dxh/DxhVim.git ~/.vim
 ```
 
 2. Clone vundle
+
 ```bash
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ```
 
 3. Source the configuration
+
 ```bash
 echo 'source ~/.vim/.vimrc' > ~/.vimrc
 ```
 
 4. Install plugins included by this configuration
+
 ```bash
 :BundleInstall
 ```
