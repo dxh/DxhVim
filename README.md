@@ -21,7 +21,7 @@ Configuration of Vim Supported by [dxh](http://dxh.github.io)
 4. Install plugins included by this configuration
     
     ```bash
-    :BundleInstall
+    :BundleInstall          # In vim
     ```
 
 # Update to the latest version
