@@ -11,9 +11,6 @@ Configuration of Vim Supported by [dxh](http://dxh.github.io)
 curl https://raw.github.com/dxh/DxhVim/master/install.sh > install.sh && sh install.sh
 ```
 
-# Usage
-Vim will auto-install vundle and plugins when you open vim the first time.
-
 # Update to the latest version
 ```bash    
 cd ~/.vim/
