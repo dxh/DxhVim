@@ -82,6 +82,9 @@
         echo "Installing Bundles, please ignore key map error messages"
         echo ""
         :BundleInstall
+        :q!
+        :q!
+        echo "Successfully, Enjoy yourself! :)"
     endif
 " } Vundle Settings End!
 

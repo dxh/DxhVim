@@ -13,21 +13,13 @@ Configuration of Vim Supported by [dxh](http://dxh.github.io)
     ```bash
     git clone https://github.com/dxh/DxhVim.git ~/.vim
     ```
-2. Clone vundle
-    
-    ```bash
-    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-    ```
-3. Source the configuration
+2. Source the configuration
     
     ```bash
     echo 'source ~/.vim/.vimrc' > ~/.vimrc
     ```
-4. Install plugins included by this configuration
-    
-    ```bash
-    :BundleInstall          # In vim
-    ```
+# Usage
+Vim will auto-install vundle and plugins when you open vim the first time.
 
 # Update to the latest version
 ```bash    
