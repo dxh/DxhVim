@@ -49,13 +49,6 @@
     filetype indent plugin on                                   " Autoindent based on filetype
 " }
 
-
-" Color related settings {
-    syntax on                                                   " Highlighting 
-    "colorscheme solarized
-    set background=dark
-" }
-
 " Custom key map {
     nnoremap ; :
     nnoremap <F2> :set nonumber!<CR>
@@ -65,7 +58,6 @@
 
 
 " Vundle Settings {
-    
     set nocompatible               " be iMproved
     filetype off                   " required!
 
@@ -75,36 +67,12 @@
     " let Vundle manage Vundle
     " required! 
     Bundle 'gmarik/vundle'
-
-    " 4 ways to install plugins {
     
-        " 1. original repos on github
-        " Bundle 'tpope/vim-fugitive'
-        " Bundle 'Lokaltog/vim-easymotion'
-        " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-
-        " 2. vim-scripts repos
-        " Bundle 'L9'
-        " Bundle 'FuzzyFinder'    
-        
-        " 3. non github repos
-        " Bundle 'git://git.wincent.com/command-t.git'
-        
-        " 4. git repos on your local machine (ie. when working on your own plugin)
-        "Bundle 'file:///Users/gmarik/path/to/plugin'
-    " }
     filetype plugin indent on     " required!
     
-    " Brief help
-    " :BundleList          - list configured bundles
-    " :BundleInstall(!)    - install(update) bundles
-    " :BundleSearch(!) foo - search(or refresh cache first) for foo
-    " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-    "
-    " see :h vundle for more details or wiki for FAQ
-    " NOTE: comments after Bundle command are not allowed..
-    
-    " My Plugins 
+" } Vundle Settings End!
+
+" My Plugins { 
 
     " The-NERD-tree {
         Bundle 'vim-scripts/The-NERD-tree'   
@@ -147,7 +115,14 @@
     " }
 
     Bundle 'bling/vim-airline'
-    "Bundle 'altercation/vim-colors-solarized'
+    
+    " Color related settings {
+        Bundle 'altercation/vim-colors-solarized'
+        syntax enable                                               " Highlighting 
+        set background=dark
+        colorscheme solarized
+    " }
+
     Bundle 'Yggdroot/indentLine'                      
     
     " vim-markdown {
@@ -161,4 +136,5 @@
         " ]c: go to Current header.
         " ]u: go to parent header (Up)
     " }
-" } Vundle Settings End!
+" } My Plugins End!
+
