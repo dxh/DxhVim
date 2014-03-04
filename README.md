@@ -1,6 +1,11 @@
 # About 
 Configuration of Vim Supported by [dxh](http://dxh.github.io)
 
+1. Integration of popular plugins 
+2. Plugins managed by vundle 
+3. System clipboard 
+4. Custom key mapping 
+
 # Installation (Mac OS X and Linux)
 
 1. Clone this Configuration
@@ -30,12 +35,4 @@ cd ~/.vim/
 git pull
 :BundleInstall
 ```
-
-# Features
-1. 使用Vundle管理插件
-2. 集成常用插件
-3. 使用系统剪贴板
-4. 一些方便的快捷键
-
-# Key Mapping
 

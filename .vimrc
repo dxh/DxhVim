@@ -58,83 +58,36 @@
 
 
 " Vundle Settings {
+    let iCanHazVundle=1
+    let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+    if !filereadable(vundle_readme)
+        echo "Installing Vundle.."
+        echo ""
+        silent !mkdir -p ~/.vim/bundle
+        silent !git submodule add https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+        let iCanHazVundle=0
+    endif
+    
     set nocompatible               " be iMproved
     filetype off                   " required!
-
     set rtp+=~/.vim/bundle/vundle/
     call vundle#rc()
-
-    " let Vundle manage Vundle
-    " required! 
     Bundle 'gmarik/vundle'
-    
     filetype plugin indent on     " required!
-    
+
+    "Add my bundles here
+    source ~/.vim/.myplugins    
+
+    if iCanHazVundle == 0
+        echo "Installing Bundles, please ignore key map error messages"
+        echo ""
+        :BundleInstall
+    endif
 " } Vundle Settings End!
 
-" My Plugins { 
 
-    " The-NERD-tree {
-        Bundle 'vim-scripts/The-NERD-tree'   
-        " Key Map
-        " F3 Toogle the-nerd-tree
-        " o Open 
-        " go Open and stay
-        " x Unfold
-        " X Unfold All
-        " :h NerdTreeMapping See more key mapping
-    " }
-   
-    " taglist {
-        Bundle 'vim-scripts/taglist.vim'
-        " Key Map
-        " F4 Toogle taglist
-    " }
-   
-    " ctrlp { 快速打开文件
-        Bundle 'kien/ctrlp.vim'
-    " }
-   
-    " neocomplcache { 代码补全
-         "Bundle 'Valloric/YouCompleteMe'
-        "功能强大，但是每个平台需要单独编译,安装方法请参考该插件Github上的说明
-    " }
-    " emmet { 前端开发利器
-        Bundle "mattn/emmet-vim"
-        " Key Map
-        " <c-y>/ Toogle 注释
-    " }
-    " vim-multiple-cursors { 多光标操作，可同时编辑多个地方
-        Bundle 'terryma/vim-multiple-cursors'
-    " }
-    
-    " nerdcommenter {
-        Bundle 'scrooloose/nerdcommenter'
-        " Key Map
-        " <leader>ci comment and uncomment
-    " }
-
-    Bundle 'bling/vim-airline'
-    
-    " Color related settings {
-        Bundle 'altercation/vim-colors-solarized'
-        syntax enable                                               " Highlighting 
-        set background=dark
-        colorscheme solarized
-    " }
-
-    Bundle 'Yggdroot/indentLine'                      
-    
-    " vim-markdown {
-        Bundle 'plasticboy/vim-markdown'
-        " Key Map
-        " ]]: go to next header
-        " ]]: go to next header.
-        " [[: go to previous header. Contrast with ]c.
-        " ][: go to next sibling header if any.
-        " []: go to previous sibling header if any.
-        " ]c: go to Current header.
-        " ]u: go to parent header (Up)
-    " }
-" } My Plugins End!
-
+" Color related settings {
+    syntax enable                                               " Highlighting 
+    set background=dark
+    colorscheme solarized
+" }
