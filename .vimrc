@@ -84,7 +84,6 @@
         :BundleInstall
         :q!
         :q!
-        echo "Successfully, Enjoy yourself! :)"
     endif
 " } Vundle Settings End!
 
