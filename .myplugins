@@ -11,8 +11,9 @@
 
 " taglist {
     Bundle 'vim-scripts/taglist.vim'
-    " Key Map
-    " F4 Toogle taglist
+	let Tlist_GainFocus_On_ToggleOpen = 1
+	let Tlist_File_Fold_Auto_Close = 1
+	let Tlist_Sort_Type = "name"
 " }
 
 " ctrlp { 快速打开文件

@@ -4,6 +4,7 @@
     map <silent> <leader>sv :source ~/.vimrc<cr>                
     " Fast editing of .vimrc
     map <silent> <leader>ev :e ~/.vim/.vimrc<cr>                
+    map <silent> <leader>ep :e ~/.vim/.myplugins<cr>                
     " When .vimrc is edited, reload it 
     autocmd! bufwritepost .vimrc source ~/.vimrc                
 " }
@@ -49,12 +50,6 @@
     filetype indent plugin on                                   " Autoindent based on filetype
 " }
 
-" Custom key map {
-    nnoremap ; :
-    nnoremap <F2> :set nonumber!<CR>
-    nnoremap <F3> :NERDTreeToggle<CR>
-    nnoremap <F4> :TlistToggle<CR>
-" }
 
 
 " Vundle Settings {
@@ -92,4 +87,11 @@
     syntax enable                                               " Highlighting 
     set background=dark
     colorscheme solarized
+" }
+
+" key map {
+    nnoremap ; :
+    nnoremap <F2> :set nonumber!<CR>
+    nnoremap <F3> :NERDTreeToggle<CR>
+    nnoremap <F8> :TlistToggle<CR>
 " }
