@@ -12,7 +12,7 @@
 " taglist {
     Bundle 'vim-scripts/taglist.vim'
     let Tlist_GainFocus_On_ToggleOpen = 1
-    let Tlist_File_Fold_Auto_Close = 1
+	let Tlist_Exit_OnlyWindow = 1
     let Tlist_Sort_Type = "name"
 " }
 
