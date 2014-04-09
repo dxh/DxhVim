@@ -4,7 +4,7 @@
     map <silent> <leader>sv :source ~/.vimrc<cr>                
     " Fast editing of .vimrc
     map <silent> <leader>ev :e ~/.vim/.vimrc<cr>                
-    map <silent> <leader>ep :e ~/.vim/.myplugins<cr>                
+    map <silent> <leader>ep :e ~/.vim/.myplugins-vimrc<cr>                
     " When .vimrc is edited, reload it 
     autocmd! bufwritepost .vimrc source ~/.vimrc                
 " }
@@ -12,12 +12,13 @@
 " General Settings {
     set nonu
     set nobackup
-    set nowrap                                                  " Don't auto change line
+    "set nowrap                                                  " Don't auto change line
     set showcmd                                                 " Show current cmd in status bar
     set ruler                                                   " Show number of rows and columns in status bar
     set mouse=a
     set clipboard=unnamed
     if has('mac') || has("macunix")
+        set guifont=Monaco:h14
         vmap y :w !pbcopy<CR><CR>
         nmap p :r !pbpaste<CR><CR> 
     endif
@@ -50,8 +51,6 @@
     filetype indent plugin on                                   " Autoindent based on filetype
 " }
 
-
-
 " Vundle Settings {
     let iCanHazVundle=1
     let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
@@ -71,7 +70,7 @@
     filetype plugin indent on     " required!
 
     "Add my bundles here
-    source ~/.vim/.myplugins    
+    source ~/.vim/.myplugins-vimrc
 
     if iCanHazVundle == 0
         echo "Installing Bundles, please ignore key map error messages"
@@ -82,16 +81,21 @@
     endif
 " } Vundle Settings End!
 
-
 " Color related settings {
     syntax enable                                               " Highlighting 
     set background=dark
-    colorscheme solarized
+    "colorscheme solarized
+    colorscheme desert
 " }
 
-" key map {
+" keymap {
     nnoremap ; :
     nnoremap <F2> :set nonumber!<CR>
     nnoremap <F3> :NERDTreeToggle<CR>
     nnoremap <F8> :TlistToggle<CR>
+    
+    " SVN Related Key map {
+        nnoremap <leader>sup % :!svn update<CR>
+        nnoremap <leader>sci % :!svn commit -m '' 
+    " }
 " }

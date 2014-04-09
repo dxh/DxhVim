@@ -1,6 +1,6 @@
 " The-NERD-tree {
     Bundle 'vim-scripts/The-NERD-tree'   
-    " Key Map
+    " Keymap
     " F3 Toogle the-nerd-tree
     " o Open 
     " go Open and stay
@@ -18,17 +18,28 @@
 
 " ctrlp { 快速打开文件
     Bundle 'kien/ctrlp.vim'
+    " Keymap
+    " <c-p>
 " }
 
 " neocomplcache { 代码补全
+    Bundle 'Shougo/neocomplcache.vim'
+    let g:neocomplcache_enable_at_startup = 1
+    "YMC功能强大，但是每个平台需要单独编译,安装方法请参考该插件Github上的说明
      "Bundle 'Valloric/YouCompleteMe'
-    "功能强大，但是每个平台需要单独编译,安装方法请参考该插件Github上的说明
 " }
+
+" vim-autoclose { 括号自动匹配
+    Bundle 'spf13/vim-autoclose'
+    let g:autoclose_vim_commentmode = 1
+" }
+
 " emmet { 前端开发利器
-    Bundle "mattn/emmet-vim"
+    Bundle 'mattn/emmet-vim'
     " Key Map
     " <c-y>/ Toogle 注释
 " }
+
 " vim-multiple-cursors { 多光标操作，可同时编辑多个地方
     Bundle 'terryma/vim-multiple-cursors'
 " }
@@ -39,9 +50,9 @@
     " <leader>ci comment and uncomment
 " }
 
-Bundle 'bling/vim-airline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Yggdroot/indentLine'                      
+Bundle 'bling/vim-airline'
 
 " vim-markdown {
     Bundle 'plasticboy/vim-markdown'
