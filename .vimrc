@@ -84,8 +84,8 @@
 " Color related settings {
     syntax enable                                               " Highlighting 
     set background=dark
-    "colorscheme solarized
-    colorscheme desert
+    colorscheme solarized
+    "colorscheme desert
 " }
 
 " keymap {
