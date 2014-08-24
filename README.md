@@ -8,7 +8,7 @@ Configuration of Vim Supported by [dxh](http://dxh.github.io)
 
 # Installation (Mac OS X and Linux)
 ```bash
-curl https://raw.github.com/dxh/DxhVim/master/install.sh > install.sh && sh install.sh
+curl https://raw.githubusercontent.com/dxh/DxhVim/master/install.sh > install.sh && sh install.sh
 ```
 
 # Update to the latest version
