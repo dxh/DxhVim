@@ -22,7 +22,7 @@
         vmap y :w !pbcopy<CR><CR>
         nmap p :r !pbpaste<CR><CR> 
     endif
-    set backspace=indent,eol,start
+    "set backspace=indent,eol,start
 " }
 
 " Chinese related settings {
@@ -84,15 +84,15 @@
 " Color related settings {
     syntax enable                                               " Highlighting 
     set background=dark
-    colorscheme solarized
-    "colorscheme desert
+    "colorscheme solarized
+    colorscheme desert
 " }
 
 " keymap {
     nnoremap ; :
-    nnoremap <F2> :set nonumber!<CR>
-    nnoremap <F3> :NERDTreeToggle<CR>
-    nnoremap <F8> :TlistToggle<CR>
+    nnoremap <leader>sn :set nonumber!<CR>
+    nnoremap <leader>d :NERDTreeToggle<CR>
+    nnoremap <leader>t :TlistToggle<CR>
     
     " SVN Related Key map {
         nnoremap <leader>sup % :!svn update<CR>

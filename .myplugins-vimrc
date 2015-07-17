@@ -50,7 +50,9 @@
     " <leader>ci comment and uncomment
 " }
 
-Bundle 'altercation/vim-colors-solarized'
+"Bundle 'altercation/vim-colors-solarized'
+"let g:solarized_termcolors = 16
+
 Bundle 'Yggdroot/indentLine'                      
 Bundle 'bling/vim-airline'
 
