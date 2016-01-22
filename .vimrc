@@ -12,7 +12,7 @@
 " General Settings {
     set nonu
     set nobackup
-    "set nowrap                                                  " Don't auto change line
+    set nowrap                                                  " Don't auto change line
     set showcmd                                                 " Show current cmd in status bar
     set ruler                                                   " Show number of rows and columns in status bar
     set mouse=a
@@ -22,7 +22,7 @@
         vmap y :w !pbcopy<CR><CR>
         nmap p :r !pbpaste<CR><CR> 
     endif
-    "set backspace=indent,eol,start
+    set backspace=indent,eol,start
 " }
 
 " Chinese related settings {

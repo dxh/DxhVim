@@ -56,10 +56,10 @@
 Bundle 'Yggdroot/indentLine'                      
 Bundle 'bling/vim-airline'
 
-" vim-markdown {
+"Markdown {
+    Plugin 'godlygeek/tabular'
     Bundle 'plasticboy/vim-markdown'
     " Key Map
-    " ]]: go to next header
     " ]]: go to next header.
     " [[: go to previous header. Contrast with ]c.
     " ][: go to next sibling header if any.
